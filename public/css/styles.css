@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;  /* sirve para que tu contenedor en conjunto con todos sus componentes no pueda tomar un valor mas grande que su viewport, aqui lo ponemos como selector universal porque o vamos a utilizar para muchas cosas */
+}
+
+.contenedor01{
+    width: 90%;
+    background-color: aquamarine;
+    color: salmon;
+    padding: 20px;
+    border: 5px solid wheat;
+    margin:auto;
+
+
+/* se va a hace run poco mas responsiva al usar procentajes porque va a toar el valor del 80% de la medida del viewport que tenga el contenedor donde este el contenedor 01 que en este caso es el body
+lo mejor es no implementar un TAMAÑO DE ALTURA porque se va a limitar es mejor que no lo pongas y asi directamente se adapta solo al tamaño de altura del dispositivo */
+}
+
+.contenedor02{
+    width: 90%;
+    background-color: salmon;
+    color: aquamarine;
+    padding: 20px;
+    border: 5px solid wheat;
+    margin-top: 20px;
+    margin:auto;
+}
+.oculto{
+    display: none;
+    color: thistle;
+    font-weight: bolder;
+}
+body{
+    background-color: palevioletred;
+}
+@media(min-width: 570px){
+
+    .contenedor01{
+        background-color: deeppink;
+        color: darkmagenta;
+    }
+    .contenedor02{
+        background-color: darkmagenta;
+        color: white;
+    }
+    body{
+        background-color: yellow;
+    }
+    .contenedor01,.contenedor02{
+        width: 70%;
+    }
+    /* si queremos agrupar selectores que van a compartir algunas caracteristicas en los media queries se puede lograr por medio de una " , " */
+}
+@media(min-width: 768px){
+    body{
+        background-color: transparent;
+    }
+}
+@media(min-width: 992px){
+    .contenedor01{
+        color: white;
+        border: 10px solid saddlebrown;
+    }
+    .contenedor02{
+        border: 10px solid plum;
+    }
+
+    .oculto{
+        display: block;
+    }
+}
+@media(min-width: 1200px){
+    
+    .contenedor01{
+        max-width: 1200px;
+    }
+    
+}

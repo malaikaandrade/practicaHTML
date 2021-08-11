@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>haciendo una pagina responsiva</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <article class="contenedor01">
+            <h2>Este es el contenedor 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptate veniam id sit. Excepturi accusamus ex sit culpa aspernatur non suscipit deserunt nostrum! Corporis eligendi alias, voluptates exercitationem dignissimos in.</p>
+            <p class="oculto">ESTE ES EL ELEMENTO OCULTO QUE SOLO SE MUESTRA CON DISPLAY: BLOCK</p>
+            <article class="contenedor02">
+                soy el contenedor 2, lo que paso aqui es que el contenedor mas pequeño esta sobrepasando las medidas del contenedor masgrande, esto pasa porque como el contenedor 1 tiene medidas en porcentajes y el contenedor 2 tiene las medidas en vw(viewport) entonces tomo como el 90 del total de la pagina y no del contenedor
+            </article>
+        </article>
+        <article class="contenedor02">
+            <h2>Soy el contenedor 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi harum odio corrupti enim inventore consequatur possimus sunt. Officia sint sed maxime molestias ad tempore dolorum ipsum, nostrum nam magni totam.</p>
+            <article class="contenedor01">
+                en este caso si queda adentro del contenedor mas grande porque toma como elemento padre ese contenedor y solo va a tomar el 90% del mismo y nunca lo va a sobrepasar
+            </article>
+        </article>
+       
+
+
+    </body>
+
+</html>
